@@ -1,0 +1,152 @@
+.shop{
+    margin-block-start: 1.5em;
+      display: flex;
+      flex-direction: column;
+      gap: 0.83em;
+      width: 80%;
+      max-width: 75vw;
+  }
+
+.cards {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    width: inherit;
+    height: 280px;
+    background: #ffffff;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    display: none;
+}
+
+.card.unhidden{
+    display: block;
+}
+
+.card.hidden,
+.card.hidden-2{
+    display: none !important;
+}
+
+.card.unvisible{
+    display: none !important;
+}
+
+.card.active,
+.card:hover {
+    background-color: #f5f5f5;
+}
+
+.card.active .button-basket{
+    background-color: #46760a;
+}
+.book {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+.book__image {
+    height: inherit;
+    border-radius: 12px;
+}
+.book__iformation {
+    display: flex;
+    /* flex-direction: column; */
+    width: 40%;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.book__information-category {
+    width: 100%;
+}
+
+.book__information-title {
+    width: 100%;
+}
+.book__information-author {
+    width: 100%;
+}
+.book__information-date-publisher {
+}
+.book__information-range {
+    width: 100%;
+}
+.book__information-range > img {
+    height: 2em;
+}
+.book__information-subtitle {
+    color: #a9a9a9;
+    width: 50%;
+}
+.book__information-publisher {
+    width: 50%;
+}
+
+.book__information-binding {
+    width: 50%;
+}
+.book__information-count {
+    width: 50%;
+}
+
+.book__information-favorite {
+}
+.book__sales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 26%;
+}
+.price {
+    font-size: 2em;
+    line-height: 1.6em;
+    font-weight: 600;
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    gap: 0.5em;
+}
+.btn,
+.button-more {
+    /* display: flex;
+flex-direction: row; */
+    align-items: center;
+    padding: 12px 16px;
+    gap: 6px;
+
+    width: inherit;
+    height: 47px;
+
+    /* C2/A */
+
+    background: #6a983c;
+    /* C2/B */
+
+    border: 2px solid #46760a;
+    border-radius: 12px;
+
+    /* Inside auto layout */
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+
+    /* C1/J */
+
+    color: #ffffff;
+}
+
+.button-basket {
+    background: #f5f5f5;
+    border-radius: 12px;
+    color: #151515;
+}

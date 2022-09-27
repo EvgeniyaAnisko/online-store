@@ -1,0 +1,13 @@
+.sorting{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorting__item{
+   background-color: #f5f5f5;
+   border: 2px solid #46760a;
+   border-radius: 12px;
+   font-family: inherit;
+   font-size: 1em;
+}

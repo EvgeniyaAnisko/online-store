@@ -1,0 +1,122 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Beer money';
+    src: url('./assets/font/beermoney/beermoney.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Beer money';
+}
+
+header {
+    padding: 10px 1.04vw;
+    background: #f5f5f5;
+    /* height: 5vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 2.1vw;
+    font-weight: 800;
+}
+
+.basket-counter {
+    /* background-image: url(./src/assets/svg/basket.svg); */
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.counter {
+    border-radius: 100%;
+    background-color: #333;
+    color: #fff;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input {
+    height: 42px;
+    background: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    width: 40vw;
+    font-family: inherit;
+}
+
+#input:focus-visible{
+  border-color: #46760a;
+}
+
+main {
+    display: flex;
+    min-height: 85vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer {
+    /* height: 7vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    background: #46760a;
+}
+
+footer .copyright {
+    font-size: 0.73vw;
+    color: #333;
+    text-align: center;
+}
+
+footer > .container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 4vh;
+    font-size: 1vw;
+    align-items: center;
+}
+
+.footer-data {
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-item {
+    text-decoration: none;
+    color: #fff;
+    justify-content: flex-end;
+    padding-left: 10px;
+}
+
+.git {
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.rs {
+    height: 2vh;
+    width: auto;
+    cursor: pointer;
+    transition: 0.7s;
+}
